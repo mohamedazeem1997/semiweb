@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import logo from "../assets/samplelogo.jpg";
-import { Link } from "react-scroll";
+import { Link } from "react-scroll"; // Correct import for react-scroll Link
 import { FaXmark, FaBars } from "react-icons/fa6";
 
 function Navbar() {
@@ -97,6 +97,7 @@ function Navbar() {
                         </button>
                     </div>
                 </div>
+
                 {/* nav items for Mobile Menu */}
                 <div
                     className={`md:hidden absolute top-full left-0 right-0 bg-gray-800 border-b ${
@@ -107,9 +108,12 @@ function Navbar() {
                         {navItems.map(({ name, path }, index) => (
                             <li key={index}>
                                 <Link
-                                    href={path}
+                                    to={path} // Use react-scroll Link here
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-100}
                                     className="block text-base text-white hover:text-amber-800"
-                                    onClick={() => setIsMenuOpen(false)}
+                                    onClick={() => setisMenuOpen(false)} // Close menu after clicking
                                 >
                                     {name}
                                 </Link>
