@@ -54,9 +54,8 @@ function Navbar() {
                         <img
                             src={logo}
                             alt="Logo"
-                            className="w-10 inline-block"
+                            className="w-50 h-20 inline-block"
                         />
-                        <span className="text-stone-900">SEMICOLANS</span>
                     </a>
 
                     {/* Nav items for large screens */}
@@ -68,7 +67,7 @@ function Navbar() {
                                     spy={true}
                                     smooth={true}
                                     offset={-100}
-                                    className="block text-base text-gray-900 hover:text-amber-800"
+                                    className="block text-base text-zinc-600 hover:text-orange-600 "
                                 >
                                     {name}
                                 </Link>
@@ -78,7 +77,7 @@ function Navbar() {
 
                     {/* btn for large devices */}
                     <div className="hidden lg:flex items-center space-x-12">
-                        <button className="bg-amber-800 text-white py-2 px-6 transition-all duration-300 rounded-full hover:bg-gray-700">
+                        <button className="bg-orange-600 text-white py-2 px-6 transition-all duration-300 rounded-full hover:bg-gray-700">
                             Contact Us
                         </button>
                     </div>
