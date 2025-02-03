@@ -99,7 +99,7 @@ function Navbar() {
                 </div>
                 {/* nav items for Mobile Menu */}
                 <div
-                    className={`md:hidden absolute top-full left-0 right-0 bg-white border-b ${
+                    className={`md:hidden absolute top-full left-0 right-0 bg-gray-800 border-b ${
                         isMenuOpen ? "block" : "hidden"
                     }`}
                 >
@@ -108,7 +108,7 @@ function Navbar() {
                             <li key={index}>
                                 <Link
                                     href={path}
-                                    className="block text-base text-gray-900 hover:text-amber-800"
+                                    className="block text-base text-white hover:text-amber-800"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {name}
