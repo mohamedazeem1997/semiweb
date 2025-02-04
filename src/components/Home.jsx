@@ -5,7 +5,7 @@ import banner from "../assets/banner.png";
 const Home = () => {
     return (
         <div className="bg-white">
-            <div className="px-4 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
+            <div className="py-2 lg:px-14 max-w-screen-2xl mx-auto min-h-screen h-screen">
                 <Carousel className="w-full mx-auto">
                     <div className="my-28 md:my-8 py-12 flex flex-col md:flex-row-reverse items-center justify-between gap-12">
                         <div>
@@ -17,7 +17,7 @@ const Home = () => {
                         </div>
                         {/* herotext */}
                         <div className="md:w-1/2">
-                            <h1 className="text-4xl font-semibold mb-4 text-zinc-600 md:w-3/4 leading-snug">
+                            <h1 className="text-4xl font-semibold mb-2 text-zinc-600 md:w-3/4 leading-snug">
                                 We Provide IT Services & Product for
                                 <span className=" text-orange-600 leading-snug ml-2">
                                     More than 10 years
